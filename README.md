@@ -34,7 +34,7 @@ Conditioning a Brownian Motion on its end points produces a Brownian Bridge. By 
 Suppose that the values $\(W(s_1) = x_1, W(s_2) = x_2, \ldots, W(s_k) = x_k\)$ of the Brownian path have been determined at the times $s_1 < s_2 < \ldots < s_k$ and we're interested in the value of $W(s)$ at some time within this sequence. We can conditionally sample this value based on the already known points. Suppose that $s_i < s < s_{i+1}$, then : 
 
 $$
-(W(s) \mid W(s_j) = x_j, j = 1, \ldots, k) = (W(s) \mid W(s_i) = x_i, W(s_{i+1}) = x_{i+1}
+(W(s) \mid W(s_j) = x_j, j = 1, \ldots, k) = (W(s) \mid W(s_i) = x_i, W(s_{i+1}) = x_{i+1})
 $$
 
 Which implies from the conditioning formula:
