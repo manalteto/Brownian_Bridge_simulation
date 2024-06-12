@@ -33,12 +33,16 @@ Conditioning a Brownian Motion on its end points produces a Brownian Bridge. By 
 
 Suppose that the values $\(W(s_1) = x_1, W(s_2) = x_2, \ldots, W(s_k) = x_k\)$ of the Brownian path have been determined at the times $s_1 < s_2 < \ldots < s_k$ and we're interested in the value of $W(s)$ at some time within this sequence. We can conditionally sample this value based on the already known points. Suppose that $s_i < s < s_{i+1}$, then : 
 
-    $( W(s) | W(s_j) = x_j, j = 1, \ldots, k)  = ( W(s) | W(s_i) = x_i, W(s_{i+1} = x_{i+1})$
-    
-Which implies from the conditioning formula : 
+$$
+W(s) \mid W(s_j) = x_j, j = 1, \ldots, k = W(s) \mid W(s_i) = x_i, W(s_{i+1}) = x_{i+1}
+$$
 
-$( W(s) \mid W(s_1) &= x_1, W(s_2) = x_2, \ldots, W(s_k) = x_k) \\
-&= \mathcal{N}\left(\frac{(s_{i+1} - s)x_i + (s - s_i)x_{i+1}}{s_{i+1} - s_i}, \frac{(s_{i+1} - s)(s - s_i)}{s_{i+1} - s_i}\right)$,
+Which implies from the conditioning formula:
+
+$$
+W(s) \mid W(s_1) = x_1, W(s_2) = x_2, \ldots, W(s_k) = x_k = \mathcal{N}\left(\frac{(s_{i+1} - s)x_i + (s - s_i)x_{i+1}}{s_{i+1} - s_i}, \frac{(s_{i+1} - s)(s - s_i)}{s_{i+1} - s_i}\right)
+$$
+
 
 Where actual value of $W(s)$ is normally distributed around the conditional mean of the straight line that joins $(s_i, x_i)$ and $(s_{i+1}, x_{i+1})$ with a variance that is influenced by $(s - s_i)$ and $(s_{i+1} - s)$. To draw a sample from this conditional distribution we set : 
 
