@@ -20,7 +20,9 @@ This repository contains a Python script for simulating a Brownian bridge proces
 To use this script, ensure you have Python and the necessary libraries installed. You can install the required libraries using pip:
 
 ```bash
+pip install numpy 
 pip install numpy matplotlib
+pip install multiprocessing.dummy 
 ```
 
 # Brownian Bridge construction 
