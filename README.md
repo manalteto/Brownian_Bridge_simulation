@@ -22,3 +22,5 @@ To use this script, ensure you have Python and the necessary libraries installed
 ```bash
 pip install numpy matplotlib
 
+# Brownian Bridge construction 
+
