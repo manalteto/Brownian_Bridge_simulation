@@ -40,7 +40,7 @@ $$
 Which implies from the conditioning formula:
 
 $$
-W(s) \mid W(s_1) = x_1, W(s_2) = x_2, \ldots, W(s_k) = x_k = \mathcal{N}\left(\frac{(s_{i+1} - s)x_i + (s - s_i)x_{i+1}}{s_{i+1} - s_i}, \frac{(s_{i+1} - s)(s - s_i)}{s_{i+1} - s_i}\right)
+(W(s) \mid W(s_1) = x_1, W(s_2) = x_2, \ldots, W(s_k) = x_k) = \mathcal{N}\left(\frac{(s_{i+1} - s)x_i + (s - s_i)x_{i+1}}{s_{i+1} - s_i}, \frac{(s_{i+1} - s)(s - s_i)}{s_{i+1} - s_i}\right)
 $$
 
 
