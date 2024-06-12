@@ -50,22 +50,12 @@ $W(s) = \frac{(s_{i+1} - s)x_i + (s - s_i)x_{i+1}}{s_{i+1} - s_i} + \sqrt{\frac{
 
 with $Z \sim \mathcal{N}(0, 1)$ being independent of all $W(s_1), \ldots, W(s_k)$.
 
-# Usage 
-You can run the script and visualize the Brownian bridge as follows :
+# Plots
 
-import numpy
-import matplotlib.pyplot as plt
-from your_script import bridge, multibridge, parallel_multibridge
+### Single bridge Plot
+![Single bridge Plot](bridge.png)
 
-# Define parameters
-M = 1000
-N = 100
-nodes = [0, 0.5, 1]
-times = [0, 0.5, 1]
+### Multibridge Plot
+![Multibridge Plot](multiBridge.png)
 
-# Generate and plot bridges
-B = multibridge(M, N, nodes, times)
-plt.plot(B.T)
-plt.savefig('multiBridge.png')  # Save plot as image
-plt.show()
 
