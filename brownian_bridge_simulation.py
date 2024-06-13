@@ -10,12 +10,6 @@ from matplotlib import pyplot
 from multiprocessing.dummy import Pool as ThreadPool
 
 # Parameters
-S0 = 100  # Initial stock price
-K = 100   # Strike price
-T = 3    # Time to maturity
-r = 0.05  # Risk-free rate
-q = 0      # Dividend yield
-sigma = 0.2  # Volatility
 M = 10000  # Number of simulations
 N = 100    # Number of time steps
 nodes = [1, 3, 5, 8, 12, 9 , 6, 8]
